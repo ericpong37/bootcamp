@@ -1,9 +1,11 @@
+
 import java.util.Objects;
 
 public class Book {
   private int id;
   private String name;
-  private Library library; // book -> library object address
+  // private Library library; // book -> library object address
+  // private Citizen citizen;
 
   public Book(int id, String name) {
     this.id = id;

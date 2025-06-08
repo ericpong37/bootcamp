@@ -1,4 +1,3 @@
-
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -60,10 +59,24 @@ public class DemoHashSet {
     System.out.println(uniqueCats); // [Cat(name=Vincent), Cat(name=Lucas), Cat(name=Jennie)]
 
     // 1. true / false (Check if any duplicated cat)
+    boolean foundDuplicated = false;
+    for (Cat cat : cats) {
+      if (!uniqueCats.add(cat)) {
+        foundDuplicated = true;
+        break;
+      }
+    }
+    System.out.println(foundDuplicated); // true
 
     // 2. Has Ordering, remove Duplicated
-    
-
+    HashSet<Cat> catset = new HashSet<>();
+    ArrayList<Cat> orderedCats = new ArrayList<>();
+    for (Cat cat : cats) { // ordering
+      if (catset.add(cat)) { // checking
+        orderedCats.add(cat); // ordering
+      }
+    }
+    System.out.println(orderedCats); // [Cat(name=Jennie), Cat(name=Vincent), Cat(name=Lucas)]
 
   }
 }

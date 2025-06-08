@@ -1,5 +1,6 @@
+
 public enum Direction {
-  // ! someone help you call Direction(int value) to create Direction object
+  // ! someone help you call Direction(int value) to create Direction Object
 
   // 4 enum object here ...
   EAST(1), //
@@ -10,7 +11,7 @@ public enum Direction {
 
   private int value;
 
-  // enum constructor -> private
+  // enum cosntructor -> private
   private Direction(int value) {
     this.value = value;
   }
@@ -22,7 +23,7 @@ public enum Direction {
   public static Direction of(int value) {
     // for loop
     for (Direction d : Direction.values()) {
-      if (d.getValue() == values)
+      if (d.getValue() == value)
         return d;
     }
     return null;

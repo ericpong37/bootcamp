@@ -1,3 +1,4 @@
+
 public class Photo {
   private static long counter = 0;
   private long id;

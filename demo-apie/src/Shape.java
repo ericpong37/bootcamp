@@ -1,4 +1,3 @@
-
 import java.math.BigDecimal;
 
 public abstract class Shape {
@@ -53,7 +52,6 @@ public abstract class Shape {
       sum = sum.add(BigDecimal.valueOf(shapes[i].area()));
     }
     System.out.println(sum.doubleValue()); // 103.74999246391165
-
 
   }
 }

@@ -1,5 +1,6 @@
-// ! Interface contains abstract methold(s) ONLY
+
+// ! Interface contains abstract method(s) ONLY
 public interface Readable { // Skill & Contract
-  //public void read();
-  void read(); // implicitly public & abstract
+  // public void read();
+  String read(); // implicitly public & abstract
 }

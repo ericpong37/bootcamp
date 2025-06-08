@@ -1,4 +1,3 @@
-
 // Library, Book, Citizen
 // extends, implements
 

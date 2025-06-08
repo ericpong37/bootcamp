@@ -1,3 +1,4 @@
-public class Writable {
+
+public interface Writable {
   void write(String content);
 }

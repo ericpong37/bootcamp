@@ -1,3 +1,4 @@
+
 public class Phone extends Machine { // Phone "has" Camera
   private final String model;
   private Camera camera;

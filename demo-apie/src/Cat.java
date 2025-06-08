@@ -1,4 +1,3 @@
-
 public class Cat extends Animal {
   // Attributes -> inherited (name)
   private int age;
@@ -26,5 +25,15 @@ public class Cat extends Animal {
   @Override
   public void sound() {
     System.out.println("Meow ...");
+  }
+
+  // equals()
+
+  @Override
+  public String toString() {
+    return "Cat(" //
+        + "name=" + super.getName() //
+        + ",age=" + this.age //
+        + ")";
   }
 }

@@ -1,10 +1,15 @@
-
+import java.time.LocalDate;
 import java.util.Objects;
 
-public class Cat {
+public class Cat extends Animal{
   private String name;
 
   public Cat(String name) {
+    this.name = name;
+  }
+
+  public Cat(String name, LocalDate dob) {
+    super(dob);
     this.name = name;
   }
 
@@ -12,7 +17,8 @@ public class Cat {
     return this.name;
   }
 
-  // for fun
+  // ! Methold Signature (Override): Return type + Method name + Argumetns -> "int compareTo(Cat cat)
+  // ! Methold SIgnature (Polymorphism): Methold Name + Arguments -> "compareTo(Cat cat)"
   public int compareTo(Cat cat) {
     if (this.name.length() == cat.getName().length()) {
       return 0;
@@ -39,6 +45,7 @@ public class Cat {
   public String toString() {
     return "Cat("
       + "name=" + this.name
+      + ",dob=" + super.getDob()
       + ")";
   }
 

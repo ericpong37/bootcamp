@@ -1,3 +1,4 @@
+
 // Account, SubAccount
 
 // PersonalAccount & CommericalAccount
@@ -12,7 +13,7 @@ public abstract class Account {
   // super()
   public Account() {
     this.subAccounts = new SubAccount[2];
-    this.subAccounts[0] = new SavingAccount(); // ! New Concept
+    this.subAccounts[0] = SavingAccount.ofHKD(); // ! New Concept
     this.subAccounts[1] = new CurrentAccount();
   }
 

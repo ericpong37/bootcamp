@@ -1,4 +1,3 @@
-
 public class Candy {
   // How to distinguish 2 RED color of candies.
   private String color;

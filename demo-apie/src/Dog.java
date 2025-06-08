@@ -1,6 +1,6 @@
 
 public class Dog extends Animal {
-  
+
   public Dog(String name) {
     super(name);
   }
@@ -8,6 +8,20 @@ public class Dog extends Animal {
   @Override
   public void sound() {
     System.out.println("wow wow...");
+  }
+
+  public void bark() {
+    System.out.println("barking!!!!");
+  }
+
+  @Override
+  public boolean equals(Object obj) {
+    if (this == obj)
+      return true;
+    if (!(obj instanceof Dog))
+      return false;
+    Dog dog = (Dog) obj;
+    return dog.getName().equals(super.getName());
   }
 
   public static void main(String[] args) {

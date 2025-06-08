@@ -19,7 +19,7 @@ public class Card {
     System.out.println(c2.getColor());
     System.out.println(c3.getColor());
 
-    // 
-    System.out.println(c1.getColor() == c2.getColor());
+    // c1 and c2 they are using same Color object
+    System.out.println(c1.getColor() == c2.getColor()); // true
   }
 }
